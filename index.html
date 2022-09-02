@@ -10,114 +10,111 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
     <link rel="stylesheet" href="./assets/style/all.css" />
+    <style>
+      * {
+        outline: 0.5px solid lightgray;
+      }
+    </style>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-          </ul>
-          <div class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
+    <div class="container-fluid px-0">
+      <div class="d-none d-sm-block py-2">
+        <div class="py-4 border border-secondary border-start-0 border-end-0">
+          <p class="text-center text-secondary fs-48 mb-4">老‧時光 照相館</p>
+          <div class="row">
+            <div class="col-4"> <hr> </div>
+            <p class="col-4 text-center text-secondary mb-0">
+              尋找‧儲存 你經歷的時光中，美好的記憶
+            </p>
+            <div class="col-4"> <hr> </div>
           </div>
         </div>
       </div>
-    </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom border-secondary">
+        <div class="container">
+          <a class="navbar-brand d-block d-sm-none" href="#"
+            >老‧時光 <br />
+            照相館</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-secondary me-8" aria-current="page" href="#"
+                  >找光景</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary me-8" href="#">找時光</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="#">存時光</a>
+              </li>
+            </ul>
+            <div class="nav-item">
+              <a class="nav-link text-secondary ps-0" href="#">會員登入</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
 
     
 <div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
 </div>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 
     <footer class="footer bg-primary">
+      <div class="border border-secondary border-start-0 border-end-0 mb-1">
       <div class="container">
-        <div class="row row-cols-2">
-          <div class="col">
-            <h2>老‧時光 <br> 照相館 </h2>
-            <h3>Old Time Story</h3>
+        <div class="row justify-content-between pb-10">
+          <div class="col-12 col-md-4 mt-15 ms-20">
+            <p class="text-white fs-48">
+              老‧時光 <br />
+              照相館
+            </p>
+            <p class="text-white fs-24">Old Time Story</h3>
           </div>
-          <div class="col row row-cols-2">
-            <ul class="col">
-              <li><a class="text-secondary" href="#">關於我們</a></li>
-              <li><a class="text-secondary" href="#">會員登入</a></li>
-            </ul>
-            <ul class="col">
-              <li><a class="text-secondary" href="#">找時光</a></li>
-              <li><a class="text-secondary" href="#">找光景</a></li>
-              <li><a class="text-secondary" href="#">存時光</a></li>
-            </ul>
-            <ul class="d-flex">
-              <li><a class="text-secondary" href="#">instergram</a></li>
-              <li><a class="text-secondary" href="#">facebook</a></li>
-              <li><a class="text-secondary" href="#">gitHub</a></li>
-              <li><a class="text-secondary" href="#">mail</a></li>
+          <div class="col-6 col-md-2 mt-10 me-20">
+            <div class="d-flex justify-content-around">
+              <ul class="d-flex flex-column ps-0 me-6">
+                <li><a class="d-block text-dark mb-6" href="#">關於我們</a></li>
+                <li><a class="d-block text-dark mb-6" href="#">會員登入</a></li>
+              </ul>
+              <ul class="d-flex flex-column ps-0">
+                <li><a class="d-block text-dark mb-6" href="#">找時光</a></li>
+                <li><a class="d-block text-dark mb-6" href="#">找光景</a></li>
+                <li><a class="d-block text-dark mb-6" href="#">存時光</a></li>
+              </ul>
+            </div>
+            <ul class="d-flex justify-content-between ps-0">
+              <li><a class="text-dark" href="#">IG</a></li>
+              <li><a class="text-dark" href="#">FB</a></li>
+              <li><a class="text-dark" href="#">GH</a></li>
+              <li><a class="text-dark" href="#">MAIL</a></li>
             </ul>
           </div>
         </div>
       </div>
+    </div>
+    <div class="border border-secondary border-start-0 border-end-0 mb-2">
+      <p class="text-center text-dark mb-0 py-4">© 2022 By Van.CS</p>
+    </div>
     </footer>
 
     <script src="./assets/js/vendors.js"></script>
