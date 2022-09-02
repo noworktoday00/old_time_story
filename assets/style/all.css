@@ -13713,6 +13713,13 @@ fieldset:disabled .btn {
   }
 }
 
+body {
+  background-image: url(../images/rounded-plus-connected.svg);
+  background-size: 8%;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
 img {
   vertical-align: bottom;
 }
