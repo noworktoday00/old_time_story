@@ -67,13 +67,13 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       #00cc99; // $blue !default;
-$secondary:     $gray-600 !default;
-$success:       $green !default;
+$primary:       #EAD9C5; // $blue !default;
+$secondary:     #42210B; //$gray-600 !default;
+$success:        #965454;// $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
+$light:         #F0EBE5;// $gray-100 !default;
 $dark:          $gray-900 !default;
 // scss-docs-end theme-color-variables
 
@@ -86,7 +86,10 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "light-gray": #DADAD8,
+  "gray": #A6A6A8,
+  "dark-gray": #656565,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -250,11 +253,17 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  1: $spacer  *0.25,
+  2: $spacer * 0.5,
+  3: $spacer * 0.75,
+  4: $spacer       ,
+  5: $spacer * 1.25,
+  6: $spacer * 1.5,
+  8: $spacer * 2,
+  10: $spacer * 2.5,
+  15: $spacer * 3.75,
+  20: $spacer * 5,
+  30: $spacer * 7.5,
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -267,7 +276,11 @@ $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) 
 // scss-docs-start position-map
 $position-values: (
   0: 0,
+  10: 10%,
+  20: 20%,
+  30: 30%,
   50: 50%,
+  70: 70%,
   100: 100%
 ) !default;
 // scss-docs-end position-map
@@ -451,12 +464,10 @@ $h6-font-size:                $font-size-base !default;
 
 // scss-docs-start font-sizes
 $font-sizes: (
-  1: $h1-font-size,
-  2: $h2-font-size,
-  3: $h3-font-size,
-  4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size
+  16: $font-size-base,
+  24: $font-size-base * 1.5,
+  32: $font-size-base * 2,
+  48: $font-size-base * 3,
 ) !default;
 // scss-docs-end font-sizes
 
