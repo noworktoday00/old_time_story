@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Search Time</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+    <!-- <style>
+      * {
+        outline: 0.5px solid lightgray;
+      }
+    </style> -->
+  </head>
+
+  <body>
+    <div class="container-fluid px-0 bg-white sticky-top">
+      <div class="d-none d-sm-block py-1">
+        <div class="py-2 border border-secondary border-start-0 border-end-0">
+          <div class="container">
+          <div class="row justify-content-center my-4">
+            <a href="./index.html" class="col-4">
+              <img src="./assets/images/old_time_story_logo_header.svg" alt="">
+            </a>
+          </div>
+        </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom border-secondary">
+        <div class="container">
+          <a class="navbar-brand d-block d-sm-none" href="#"
+            >老‧時光 <br />
+            照相館</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-secondary me-8" aria-current="page" href="./index.html"
+                  >找光景</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary me-8" href="./search-time.html">找時光</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="#">存時光</a>
+              </li>
+            </ul>
+            <div class="nav-item">
+              <a class="nav-link text-secondary ps-0" href="#">會員登入</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    
+<section class="my-4">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a class="text-secondary" href="./index.html">首頁</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">找時光</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<section class="pt-10 pb-20">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <!-- 選擇時間 -->
+      <div class="col-8 d-flex justify-content-center align-items-center mb-10 border border-secondary p-4 rounded-3 bg-white">
+          <div>
+            <label for="date-start" class="form-label fs-24 text-secondary fw-bold mb-0 me-4"
+            >起始日期</label
+            >
+          </div>
+          <div class="me-10">
+            <input
+            type="email"
+            class="form-control text-secondary"
+            id="date-start"
+            placeholder="YYYY/MM/DD"
+            />
+          </div>
+          <div>
+            <label for="date-end" class="form-label fs-24 text-secondary fw-bold mb-0 me-4"
+            >迄止日期</label
+            >
+          </div>
+          <div>
+            <input
+            type="email"
+            class="form-control text-secondary"
+            id="date-end"
+            placeholder="YYYY/MM/DD"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- 選擇標籤 -->
+        <div class="row justify-content-center">
+          <div class="col-8 row row-cols-6 align-items-center border border-secondary p-4 rounded-3 bg-white">
+          <div class="form-check col">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
+              人物團體
+            </label>
+          </div>
+          <div class="form-check col">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
+              藝術人文
+            </label>
+          </div>
+          <div class="form-check col">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
+              社會政治
+            </label>
+          </div>
+          <div class="form-check col">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
+              民俗宗教
+            </label>
+          </div>
+          <div class="form-check col">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
+              產業經濟
+            </label>
+          </div>
+          <div class="form-check col">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
+              族群語言
+            </label>
+          </div>
+          <div class="form-check col">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
+              空間建築
+            </label>
+          </div>
+          <div class="form-check col">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
+              生態環境
+            </label>
+          </div>
+      </div>
+    </div>
+      </div>
+  </div>
+</section>
+
+<section class="search-bg pt-10 pb-20 ">
+  <div class="container">
+    <!-- 選擇縣市 -->
+    <div class="row justify-content-center align-items-center">
+      <div class="col-10">
+        <div class="city-icon">
+          <img
+            class="img-fluid"
+            id="Image-Maps-Com-image-maps-2022-09-14-010234"
+            src="./assets/images/search_page/taiwan-map-empty-8.png"
+            usemap="#search-map"
+            alt=""
+          />
+          <!-- 區域名稱 start-->
+          <img
+            class="icon-taipei"
+            src="./assets/images/search_page/city-icon/taipei.svg"
+            alt=""
+          />
+          <img class="icon-newtaipei" src="./assets/images/search_page/city-icon/new_taipei.svg" alt="">
+          <img class="icon-keelung" src="./assets/images/search_page/city-icon/keelung.svg" alt="" >
+          <img src="./assets/images/search_page/city-icon/taoyuan.svg" alt="" class="icon-taoyuan">
+          <img src="./assets/images/search_page/city-icon/hsinchu.svg" alt="" class="icon-hsinchu">
+          <img src="./assets/images/search_page/city-icon/miaolee.svg" alt="" class="icon-miaoli">
+          <img src="./assets/images/search_page/city-icon/taichung.svg" alt="" class="icon-taichung">
+          <img src="./assets/images/search_page/city-icon/chunhua.svg" alt="" class="icon-changhua">
+          <img src="./assets/images/search_page/city-icon/yuinlin.svg" alt="" class="icon-yunlin">
+          <img src="./assets/images/search_page/city-icon/chiayi.svg" alt="" class="icon-chiayi">
+          <img src="./assets/images/search_page/city-icon/tainan.svg" alt="" class="icon-tainan">
+          <img src="./assets/images/search_page/city-icon/kaoshiung.svg" alt="" class="icon-kaohsiung">
+          <img src="./assets/images/search_page/city-icon/pingtong.svg" alt="" class="icon-pingtong">
+          <img src="./assets/images/search_page/city-icon/taitong.svg" alt="" class="icon-taitung">
+          <img src="./assets/images/search_page/city-icon/hualien.svg" alt="" class="icon-hualien">
+          <img src="./assets/images/search_page/city-icon/yilan.svg" alt="" class="icon-yilan">
+          <img src="./assets/images/search_page/city-icon/nantou.svg" alt="" class="icon-nantou">
+          <img src="./assets/images/search_page/city-icon/kinmeng.svg" alt="" class="icon-kinmen">
+          <img src="./assets/images/search_page/city-icon/mazhu.svg" alt="" class="icon-matsu">
+          <img src="./assets/images/search_page/city-icon/ponghu.svg" alt="" class="icon-penghu">
+          <!-- 區域名稱 end -->
+          <map class="search-map" name="search-map" id="search-map">
+            <area
+              alt=""
+              title="new-taipei"
+              class="new-taipei"
+              href="#"
+              shape="poly"
+              coords="217,183,215,168,207,157,216,153,250,147,260,118,280,130,275,148,289,165,325,197,334,217,351,231,400,241,447,274,454,286,465,291,464,307,453,307,435,306,421,312,422,327,411,338,408,348,396,353,383,352,359,362,343,339,333,337,322,351,306,345,297,351,289,372,288,388,278,396,274,382,273,362,258,350,237,339,212,333,200,333,192,325,186,309,171,294,172,269,188,265,196,251,212,244,211,229,231,242,236,256,224,261,221,272,232,285,252,283,262,287,269,299,288,288,306,285,336,295,348,286,350,275,369,270,342,248,335,240,325,240,313,248,302,251,288,251,269,259,241,255,239,241,251,228,265,209,271,197,265,177,249,180,232,187"
+              target="_self"
+            />
+            <area
+              alt=""
+              title="kee-lung"
+              class="kee-lung"
+              href="#"
+              shape="poly"
+              coords="216,186,230,189,253,182,266,187,265,203,253,215,243,234,233,240,221,234,213,227,224,221,221,207,214,202"
+              target="_self"
+            />
+            <area
+              alt=""
+              title="taipei"
+              class="taipei"
+              href="#"
+              shape="poly"
+              coords="327,243,339,252,363,268,350,268,341,272,336,285,328,285,312,278,295,278,269,294,266,284,259,280,233,280,225,273,228,259,240,258,266,264,289,255,310,256"
+              target="_self"
+            />
+            <area
+              alt=""
+              title="kin-men"
+              class="kin-men"
+              href="#"
+              shape="poly"
+              coords="125,609,114,613,93,600,75,602,67,589,76,579,97,580,87,567,104,559,120,558,123,547,142,551,153,537,166,538,175,547,196,546,214,556,195,572,192,585,196,602,216,615,226,625,241,619,265,625,225,666,238,675,248,690,239,704,213,704,212,696,192,694,183,687,178,671,205,661,219,669,215,651,182,649,170,663,151,661,132,654,131,641,136,626,156,623,157,608"
+              target="_self"
+            />
+            <area
+              alt=""
+              title="ma-tsu"
+              class="ma-tsu"
+              href="#"
+              shape="poly"
+              coords="429,754.0000305175781,404,752.0000305175781,396,741.0000305175781,423,731.0000305175781,403,727.0000305175781,413,710.0000305175781,431,704.0000305175781,460,734.0000305175781,441,734.0000305175781,451,754.0000305175781,471,750.0000305175781,461,766.0000305175781,469,777.0000305175781,496,771.0000305175781,522,777.0000305175781,550,798.0000305175781,560,813.0000305175781,574,815.0000305175781,599,824.0000305175781,590,836.0000305175781,559,827.0000305175781,558,854.0000305175781,546,866.0000305175781,537,858.0000305175781,539,842.0000305175781,551,842.0000305175781,547,816.0000305175781,536,820.0000305175781,520,819.0000305175781,502,823.0000305175781,487,821.0000305175781,490,813.0000305175781,504,808.0000305175781,522,805.0000305175781,525,797.0000305175781,496,794.0000305175781,494,785.0000305175781,479,788.0000305175781,464,796.0000305175781,455,793.0000305175781,453,781.0000305175781,436,781.0000305175781,429,770.0000305175781,443,764.0000305175781"
+              target="_self"
+            />
+            <area
+              alt=""
+              title="peng-hu"
+              class="peng-hu"
+              href="#"
+              shape="poly"
+              coords="898.0000610351562,863,886.0000610351562,846,931.0000610351562,833,934.0000610351562,816,964.0000610351562,813,1008.0000610351562,842,984.0000610351562,865,993.0000610351562,893,963.0000610351562,872,933.0000610351562,876"
+              target="_self"
+            />
+            <area
+              alt=""
+              title="tao-yuan"
+              class="tao-yuan"
+              href="#"
+              shape="poly"
+              coords="470,293,468,308,461,313,440,310,428,314,426,331,415,342,410,350,399,357,388,357,362,367,352,364,341,344,334,342,324,354,305,350,301,356,297,370,293,378,291,390,281,401,292,405,301,414,314,419,322,435,335,444,352,468,395,480,398,470,400,458,423,445,410,423,415,416,437,414,445,406,443,387,454,379,447,359,455,352,472,356,486,353,506,355,512,337,527,322,527,312,511,310,498,306,491,298"
+              target="_self"
+            />
+            <area
+              alt=""
+              title="hsin-chu"
+              class="hsin-chu"
+              href="#"
+              shape="poly"
+              coords="531,313,529,324,518,340,510,359,488,357,477,362,454,356,459,380,447,389,448,406,439,419,427,419,418,418,415,423,425,440,424,449,406,461,406,482,415,484,430,493,447,500,455,508,475,512,494,507,505,511,506,497,503,486,512,480,526,481,540,462,542,449,542,438,549,434,583,431,602,431,605,427,598,415,587,405,592,396,586,388,587,379,593,373,595,366,611,365,618,363,607,338,598,340,588,335,578,323,563,317"
+              target="_self"
+            />
+            <area
+              alt=""
+              title="miao-li"
+              class="miao-li"
+              href="#"
+              shape="poly"
+              coords="622,367,611,371,600,370,592,382,600,395,596,402,615,422,610,439,548,443,550,462,531,488,514,487,516,502,512,513,530,513,553,534,570,544,575,565,603,567,622,573,661,579,680,592,703,574,705,563,716,552,716,544,724,527,721,484,709,486,696,467,699,432,678,417,676,402,652,394,644,373"
+              target="_self"
+            />
+            <area
+              alt=""
+              title="tai-chung"
+              class="tai-chung"
+              href="#"
+              shape="poly"
+              coords="612,335,622,362,648,365,655,382,669,392,681,396,685,412,702,423,708,435,705,463,715,475,727,475,728,490,733,523,729,540,724,547,722,559,712,566,709,577,686,594,705,601,715,609,743,614,771,615,786,620,794,629,809,622,835,592,838,575,847,570,867,565,872,560,868,546,869,521,844,515,834,508,829,496,816,487,809,471,810,463,786,447,773,431,770,420,751,414,737,404,730,384,728,373,730,361,720,342,717,327,700,309,684,310,666,303,641,299,635,316,627,327"
+              target="_self"
+            />
+            <area
+              alt=""
+              title="chang-hua"
+              class="chang-hua"
+              href="#"
+              shape="poly"
+              coords="873.0000610351562,554,871.0000610351562,568,845.0000610351562,576,838.0000610351562,593,805.0000610351562,633,825.0000610351562,637,848.0000610351562,651,867.0000610351562,651,898.0000610351562,664,937.0000610351562,673,960.0000610351562,675,979.0000610351562,692,992.0000610351562,690,993.0000610351562,681,981.0000610351562,647,990.0000610351562,627,984.0000610351562,606,988.0000610351562,589,996.0000610351562,582,981.0000610351562,557,966.0000610351562,560,958.0000610351562,571,934.0000610351562,567,914.0000610351562,575,894.0000610351562,570"
+              target="_self"
+            />
+            <area
+              alt=""
+              title="yun-lin"
+              class="yun-lin"
+              href="#"
+              shape="poly"
+              coords="987.0000610351562,553,1001.0000610351562,574,1001.0000610351562,588,996.0000610351562,593,993.0000610351562,605,1000.0000610351562,624,993.0000610351562,647,1006.0000610351562,679,1002.0000610351562,691,1044.0000610351562,709,1094.0000610351562,704,1144.0000610351562,709,1145.0000610351562,699,1141.0000610351562,689,1139.0000610351562,678,1127.0000610351562,671,1108.0000610351562,648,1096.0000610351562,644,1070.0000610351562,619,1068.0000610351562,606,1068.0000610351562,606,1076.0000610351562,595,1081.0000610351562,576,1078.0000610351562,556,1083.0000610351562,543,1076.0000610351562,531,1082.0000610351562,514,1067.0000610351562,512,1063.0000610351562,529,1047.0000610351562,545,1034.0000610351562,543,1011.0000610351562,554,998.0000610351562,550"
+              target="_self"
+            />
+            <area
+              alt=""
+              title="chia-yi"
+              class="chia-yi"
+              href="#"
+              shape="poly"
+              coords="1064,506.0000305175781,1066,481.0000305175781,1077,477.0000305175781,1086,472.0000305175781,1107,468.0000305175781,1113,457.0000305175781,1109,440.0000305175781,1112,431.0000305175781,1122,449.0000305175781,1144,462.0000305175781,1172,477.0000305175781,1188,494.0000305175781,1220,513.0000305175781,1215,520.0000305175781,1206,521.0000305175781,1198,530.0000305175781,1203,563.0000305175781,1198,573.0000305175781,1183,584.0000305175781,1174,594.0000305175781,1176,609.0000305175781,1195,650.0000305175781,1209,659.0000305175781,1223,662.0000305175781,1234,676.0000305175781,1239,690.0000305175781,1248,700.0000305175781,1245,707.0000305175781,1216,709.0000305175781,1179,704.0000305175781,1154,709.0000305175781,1147,689.0000305175781,1144,674.0000305175781,1130,663.0000305175781,1112,643.0000305175781,1100,637.0000305175781,1078,614.0000305175781,1079,606.0000305175781,1089,591.0000305175781,1091,565.0000305175781,1087,555.0000305175781,1092,543.0000305175781,1086,533.0000305175781,1089,512.0000305175781,1083,508.0000305175781"
+              target="_self"
+            />
+            <area
+              alt=""
+              title="tai-nan"
+              class="tai-nan"
+              href="#"
+              shape="poly"
+              coords="1223,515,1219,525,1211,525,1205,534,1210,562,1207,575,1194,585,1182,594,1187,610,1200,641,1212,649,1229,655,1241,665,1247,681,1257,693,1260,708,1295,717,1327,719,1339,717,1365,724,1391,709,1395,698,1405,688,1410,680,1429,680,1436,678,1419,661,1410,643,1414,616,1412,602,1406,593,1393,595,1380,592,1345,570,1336,553,1322,542,1293,541,1271,533,1255,522"
+              target="_self"
+            />
+            <area
+              alt=""
+              title="kao-hsiung"
+              class="kao-hsiung"
+              href="#"
+              shape="poly"
+              coords="1625,568,1621,578,1614,582,1603,600,1585,609,1581,619,1522,639,1504,634,1494,639,1475,656,1457,661,1446,675,1425,655,1418,638,1420,615,1416,593,1407,586,1386,587,1372,575,1352,566,1339,545,1324,535,1291,532,1261,517,1244,514,1223,509,1212,499,1196,492,1181,475,1157,462,1129,445,1117,431,1119,397,1138,398,1160,389,1170,380,1179,383,1190,400,1203,406,1225,423,1255,425,1294,433,1336,437,1374,435,1387,429,1405,428,1413,443,1423,469,1435,487,1435,502,1443,519,1440,549,1447,562,1471,571,1491,566,1517,568,1546,574,1567,569,1580,566,1603,572"
+              target="_self"
+            />
+            <area
+              alt=""
+              title="ping-tung"
+              class="ping-tung"
+              href="#"
+              shape="poly"
+              coords="1410.0000610351562,429,1429.0000610351562,426,1440.0000610351562,417,1454.0000610351562,423,1479.0000610351562,440,1492.0000610351562,442,1559.0000610351562,454,1573.0000610351562,449,1595.0000610351562,448,1602.0000610351562,438,1628.0000610351562,443,1688.0000610351562,411,1699.0000610351562,383,1717.0000610351562,390,1764.0000610351562,385,1776.0000610351562,376,1793.0000610351562,377,1804.0000610351562,374,1812.0000610351562,389,1832.0000610351562,391,1830.0000610351562,411,1843.0000610351562,421,1842.0000610351562,433,1829.0000610351562,434,1816.0000610351562,439,1803.0000610351562,436,1783.0000610351562,447,1764.0000610351562,442,1739.0000610351562,459,1723.0000610351562,456,1697.0000610351562,473,1690.0000610351562,491,1665.0000610351562,496,1633.0000610351562,541,1629.0000610351562,557,1615.0000610351562,565,1581.0000610351562,558,1568.0000610351562,558,1547.0000610351562,567,1509.0000610351562,559,1490.0000610351562,558,1467.0000610351562,565,1449.0000610351562,551,1448.0000610351562,517,1441.0000610351562,500,1441.0000610351562,482,1425.0000610351562,464"
+              target="_self"
+            />
+            <area
+              alt=""
+              title="nan-tou"
+              class="nan-tou"
+              href="#"
+              shape="poly"
+              coords="723,331,731,347,741,360,741,390,761,407,780,411,787,429,817,450,822,466,820,477,834,488,844,506,877,515,872,549,910,565,934,555,958,558,968,551,984,552,996,544,1008,547,1032,535,1045,537,1056,531,1058,480,1080,467,1105,463,1108,453,1104,436,1112,423,1114,397,1093,386,1083,389,1059,366,1051,361,1037,342,1014,335,983,333,966,333,941,352,923,337,892,331,862,331,844,340,825,339,806,330,783,342,757,340"
+              target="_self"
+            />
+            <area
+              alt=""
+              title="tai-tung"
+              class="tai-tung"
+              href="#"
+              shape="poly"
+              coords="1692.0000610351562,383.00001525878906,1686.0000610351562,405.00001525878906,1626.0000610351562,435.00001525878906,1599.0000610351562,429.00001525878906,1589.0000610351562,442.00001525878906,1569.0000610351562,438.00001525878906,1556.0000610351562,444.00001525878906,1482.0000610351562,432.00001525878906,1454.0000610351562,406.00001525878906,1436.0000610351562,406.00001525878906,1421.0000610351562,420.00001525878906,1407.0000610351562,425.00001525878906,1391.0000610351562,420.00001525878906,1373.0000610351562,429.00001525878906,1342.0000610351562,430.00001525878906,1287.0000610351562,420.00001525878906,1231.0000610351562,412.00001525878906,1213.0000610351562,407.00001525878906,1206.0000610351562,397.00001525878906,1190.0000610351562,390.00001525878906,1178.0000610351562,377.00001525878906,1184.0000610351562,373.00001525878906,1208.0000610351562,369.00001525878906,1221.0000610351562,351.00001525878906,1218.0000610351562,329.00001525878906,1237.0000610351562,316.00001525878906,1244.0000610351562,281.00001525878906,1236.0000610351562,270.00001525878906,1224.0000610351562,269.00001525878906,1218.0000610351562,276.00001525878906,1204.0000610351562,271.00001525878906,1199.0000610351562,264.00001525878906,1164.0000610351562,261.00001525878906,1153.0000610351562,250.00001525878906,1138.0000610351562,249.00001525878906,1124.0000610351562,253.00001525878906,1086.0000610351562,236.00001525878906,1076.0000610351562,222.00001525878906,1093.0000610351562,222.00001525878906,1119.0000610351562,233.00001525878906,1160.0000610351562,235.00001525878906,1239.0000610351562,240.00001525878906,1283.0000610351562,264.00001525878906,1330.0000610351562,281.00001525878906,1362.0000610351562,279.00001525878906,1381.0000610351562,294.00001525878906,1400.0000610351562,302.00001525878906,1429.0000610351562,305.00001525878906,1445.0000610351562,325.00001525878906,1454.0000610351562,343.00001525878906,1492.0000610351562,359.00001525878906,1549.0000610351562,359.00001525878906,1578.0000610351562,367.00001525878906,1612.0000610351562,379.00001525878906,1658.0000610351562,377.00001525878906"
+              target="_self"
+            />
+            <area
+              alt=""
+              title="hua-lian"
+              class="hua-lian"
+              href="#"
+              shape="poly"
+              coords="631.0000610351562,169.00000762939453,621.0000610351562,189.00000762939453,613.0000610351562,198.00000762939453,623.0000610351562,216.00000762939453,635.0000610351562,218.00000762939453,641.0000610351562,251.00000762939453,650.0000610351562,270.00000762939453,641.0000610351562,284.00000762939453,639.0000610351562,295.00000762939453,666.0000610351562,299.00000762939453,699.0000610351562,306.00000762939453,729.0000610351562,330.00000762939453,779.0000610351562,335.00000762939453,797.0000610351562,323.00000762939453,820.0000610351562,327.00000762939453,844.0000610351562,333.00000762939453,862.0000610351562,325.00000762939453,894.0000610351562,324.00000762939453,925.0000610351562,330.00000762939453,939.0000610351562,340.00000762939453,964.0000610351562,324.00000762939453,1029.0000610351562,328.00000762939453,1045.0000610351562,335.00000762939453,1051.0000610351562,354.00000762939453,1063.0000610351562,359.00000762939453,1084.0000610351562,381.00000762939453,1093.0000610351562,380.00000762939453,1123.0000610351562,393.00000762939453,1153.0000610351562,389.00000762939453,1173.0000610351562,377.00000762939453,1179.0000610351562,369.00000762939453,1201.0000610351562,367.00000762939453,1215.0000610351562,350.00000762939453,1216.0000610351562,328.00000762939453,1236.0000610351562,312.00000762939453,1242.0000610351562,285.00000762939453,1236.0000610351562,276.00000762939453,1226.0000610351562,275.00000762939453,1219.0000610351562,282.00000762939453,1199.0000610351562,276.00000762939453,1197.0000610351562,265.00000762939453,1168.0000610351562,266.00000762939453,1158.0000610351562,259.00000762939453,1146.0000610351562,253.00000762939453,1128.0000610351562,259.00000762939453,1081.0000610351562,239.00000762939453,1071.0000610351562,221.00000762939453,1042.0000610351562,228.00000762939453,1005.0000610351562,217.00000762939453,945.0000610351562,222.00000762939453,896.0000610351562,210.00000762939453,842.0000610351562,216.00000762939453,798.0000610351562,200.00000762939453,757.0000610351562,212.00000762939453,670.0000610351562,195.00000762939453,655.0000610351562,173.00000762939453"
+              target="_self"
+            />
+            <area
+              alt=""
+              title="yi-lan"
+              class="yi-lan"
+              href="#"
+              shape="poly"
+              coords="626.0000152587891,168,616.0000152587891,188,609.0000152587891,200,619.0000152587891,218,632.0000152587891,222,636.0000152587891,255,642.0000152587891,270,637.0000152587891,281,637.0000152587891,303,620.0000152587891,326,602.0000152587891,334,591.0000152587891,331,576.0000152587891,315,556.0000152587891,310,517.0000152587891,307,495.00001525878906,295,466.00001525878906,285,458.00001525878906,277,451.00001525878906,263,411.00001525878906,233,356.00001525878906,218,341.00001525878906,203,334.00001525878906,192,285.00001525878906,148,284.00001525878906,132,303.00001525878906,158,338.00001525878906,179,382.00001525878906,180,410.00001525878906,177,438.00001525878906,164,464.00001525878906,164,472.00001525878906,158,475.00001525878906,151,512.0000152587891,151,532.0000152587891,161,563.0000152587891,168,596.0000152587891,167,607.0000152587891,166"
+              target="_self"
+            />
+          </map>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="my-5 my-md-20 py-30 bg-white">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-11 d-flex justify-content-between align-items-center mb-5">
+        <h2 class="fs-16 text-secondary fw-bold mb-0">瀏覽時光</h2>
+        <a class="d-block text-secondary fs-16" href="#">查看更多...</a>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-11 row justify-content-center justify-content-md-between">
+        <div class="col-11 col-md-6 col-lg-3">
+          <div class="card p-2 rounded-0 shadow">
+            <img
+              src="./assets/images/e6f0f5d0-46c8-4ea5-ba9f-aa8ce87696e3.jpg"
+              class="card-img-top story-card rounded-0 mb-3"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <div class="d-flex mb-2">
+                <span class="material-icons-outlined"> location_on </span>
+                <p class="fw-bold mb-0">台中市</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p class="mb-0">1993.02.14</p>
+                <a class="d-block" href="./detail.html">more...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-11 col-md-6 col-lg-3">
+          <div class="card p-2 rounded-0 shadow">
+            <img
+              src="./assets/images/e6f0f5d0-46c8-4ea5-ba9f-aa8ce87696e3.jpg"
+              class="card-img-top story-card rounded-0 mb-3"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <div class="d-flex mb-2">
+                <span class="material-icons-outlined"> location_on </span>
+                <p class="fw-bold mb-0">台中市</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p class="mb-0">1993.02.14</p>
+                <a class="d-block" href="./detail.html">more...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-11 col-md-6 col-lg-3">
+          <div class="card p-2 rounded-0 shadow">
+            <img
+              src="./assets/images/e6f0f5d0-46c8-4ea5-ba9f-aa8ce87696e3.jpg"
+              class="card-img-top story-card rounded-0 mb-3"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <div class="d-flex mb-2">
+                <span class="material-icons-outlined"> location_on </span>
+                <p class="fw-bold mb-0">台中市</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p class="mb-0">1993.02.14</p>
+                <a class="d-block" href="./detail.html">more...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-11 col-md-6 col-lg-3">
+          <div class="card p-2 rounded-0 shadow">
+            <img
+              src="./assets/images/e6f0f5d0-46c8-4ea5-ba9f-aa8ce87696e3.jpg"
+              class="card-img-top story-card rounded-0 mb-3"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <div class="d-flex mb-2">
+                <span class="material-icons-outlined"> location_on </span>
+                <p class="fw-bold mb-0">台中市</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p class="mb-0">1993.02.14</p>
+                <a class="d-block" href="./detail.html">more...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <footer class="footer bg-primary">
+      <div class="border border-secondary border-start-0 border-end-0 mb-1">
+      <div class="container">
+        <div class="row justify-content-between pb-10">
+          <div class="col-12 col-md-4 mt-15 ms-md-20">
+            <div>
+              <img src="./assets/images/old_time_story_logo.svg" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-2 d-flex flex-column justify-content-between mt-10 me-20">
+            <div class="d-flex justify-content-around">
+              <ul class="d-flex flex-column ps-0 me-6">
+                <li><a class="d-block text-dark mb-6" href="./about-us.html">關於我們</a></li>
+                <li><a class="d-block text-dark mb-6" href="#">會員登入</a></li>
+              </ul>
+              <ul class="d-flex flex-column ps-0">
+                <li><a class="d-block text-dark mb-6" href="./index.html">找時光</a></li>
+                <li><a class="d-block text-dark mb-6" href="./search-time.html">找光景</a></li>
+                <li><a class="d-block text-dark mb-6" href="#">存時光</a></li>
+              </ul>
+            </div>
+            <ul class="d-flex justify-content-between ps-0">
+              <li><a class="text-dark" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a class="text-dark" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a class="text-dark" href="#"><i class="fa-brands fa-github"></i></a></li>
+              <li><a class="text-dark" href="#"><i class="fa-regular fa-paper-plane"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border border-secondary border-start-0 border-end-0">
+      <p class="text-center text-dark mb-0 py-4">© 2022 By Van.CS</p>
+      <p class="text-center text-dark">此網站僅做為前端side project 作品練習，無營利用途</p>
+    </div>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/jquery.rwdImageMaps.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>

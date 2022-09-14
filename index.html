@@ -23,14 +23,11 @@
     <div class="container-fluid px-0 bg-white sticky-top">
       <div class="d-none d-sm-block py-1">
         <div class="py-2 border border-secondary border-start-0 border-end-0">
-          <p class="text-center text-secondary fs-48 mb-2">老‧時光 照相館</p>
-          <div class="container-fluid">
-          <div class="row">
-            <div class="col-4 px-0"> <hr> </div>
-            <p class="col-4 text-center text-secondary mb-0 px-0">
-              尋找‧儲存 你經歷的時光中，美好的記憶
-            </p>
-            <div class="col-4 px-0"> <hr> </div>
+          <div class="container">
+          <div class="row justify-content-center my-4">
+            <a href="./index.html" class="col-4">
+              <img src="./assets/images/old_time_story_logo_header.svg" alt="">
+            </a>
           </div>
         </div>
         </div>
@@ -58,12 +55,12 @@
           >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link text-secondary me-8" aria-current="page" href="./sesarch-time.html"
+                <a class="nav-link text-secondary me-8" aria-current="page" href="./index.html"
                   >找光景</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-secondary me-8" href="#">找時光</a>
+                <a class="nav-link text-secondary me-8" href="./search-time.html">找時光</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-secondary" href="#">存時光</a>
@@ -78,6 +75,15 @@
     </div>
 
     
+<section class="banner d-flex justify-content-center align-items-center">
+    <p class="text-center text-secondary fs-48 mb-0 banner-text-bg px-20 py-10">
+      尋找‧儲存 <br> 你經歷的時光中 <br> 美好的記憶
+    </p>
+  </div>
+    </div>
+  </div>
+</section>
+
 <section class="my-5 my-md-10">
   <div class="container">
     <div class="row justify-content-around justify-content-md-between">
@@ -98,7 +104,8 @@
         </div>
       </div>
       <div class="col-10 col-md-7 order-1 order-md-2">
-        <div class="card p-6 pb-10 rounded-0 shadow">
+        <a class="text-dark" href="./detail.html">
+        <div class="card p-6 pb-6 rounded-0 shadow">
           <img
             src="./assets/images/banner-cursell.jpeg"
             class="card-img-top"
@@ -113,19 +120,20 @@
               <div class="ps-6 border-start">
                 <p>那年，騎在老爸的背上，風景...</p>
                 <div class="d-flex">
-                  <p>40°0’23”N 116°23’15”E</p>
-                  <a href="#">more...</a>
+                  <p class="me-4">40°0’23”N 116°23’15”E</p>
+                  <a href="./detail.html">more...</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="my-5 my-md-10">
+<section class="my-5 my-md-20 py-30 bg-white">
   <div class="container">
     <div class="row justify-content-center justify-content-md-between">
       <div class="col-10 col-md-7">
@@ -145,7 +153,7 @@
   </div>
 </section>
 
-<section class="my-5 my-md-10">
+<section class="my-5 my-md-30">
   <div class="container">
     <div class="row justify-content-center justify-content-md-between">
       <div
@@ -176,9 +184,9 @@
   </div>
 </section>
 
-<section class="my-5 my-md-10">
+<section class="my-5 my-md-20 py-30 bg-white">
   <div class="container">
-    <h2 class="fs-48 fw-bold text-center">瀏覽時光</h2>
+    <h2 class="fs-48 fw-bold text-center mb-20">瀏覽時光</h2>
     <div class="row justify-content-center">
       <div class="col-11 row justify-content-center justify-content-md-between">
         <div class="col-11 col-md-6 col-lg-3">
@@ -195,7 +203,7 @@
               </div>
               <div class="d-flex justify-content-between">
                 <p class="mb-0">1993.02.14</p>
-                <a class="d-block" href="#">more...</a>
+                <a class="d-block" href="./detail.html">more...</a>
               </div>
             </div>
           </div>
@@ -214,7 +222,7 @@
               </div>
               <div class="d-flex justify-content-between">
                 <p class="mb-0">1993.02.14</p>
-                <a class="d-block" href="#">more...</a>
+                <a class="d-block" href="./detail.html">more...</a>
               </div>
             </div>
           </div>
@@ -233,7 +241,7 @@
               </div>
               <div class="d-flex justify-content-between">
                 <p class="mb-0">1993.02.14</p>
-                <a class="d-block" href="#">more...</a>
+                <a class="d-block" href="./detail.html">more...</a>
               </div>
             </div>
           </div>
@@ -252,7 +260,7 @@
               </div>
               <div class="d-flex justify-content-between">
                 <p class="mb-0">1993.02.14</p>
-                <a class="d-block" href="#">more...</a>
+                <a class="d-block" href="./detail.html">more...</a>
               </div>
             </div>
           </div>
@@ -262,10 +270,12 @@
   </div>
 </section>
 
-<section class="my-5 my-md-10">
+<section class="my-5 my-md-20">
   <div class="container">
-    <h2 class="fs-48 fw-bold text-center">存時光</h2>
-    <div class="row justify-content-md-between justify-content-around align-items-center">
+    <h2 class="fs-48 fw-bold text-center mb-20">存時光</h2>
+    <div
+      class="row justify-content-md-between justify-content-around align-items-center"
+    >
       <div class="col-11 col-md-2">
         <div class="save-time mb-2"></div>
         <p class="text-center">填寫資料與付款</p>
@@ -319,21 +329,19 @@
       <div class="container">
         <div class="row justify-content-between pb-10">
           <div class="col-12 col-md-4 mt-15 ms-md-20">
-            <p class="text-white fs-48">
-              老‧時光 <br />
-              照相館
-            </p>
-            <p class="text-white fs-24">Old Time Story</h3>
+            <div>
+              <img src="./assets/images/old_time_story_logo.svg" alt="">
+            </div>
           </div>
           <div class="col-12 col-md-2 d-flex flex-column justify-content-between mt-10 me-20">
             <div class="d-flex justify-content-around">
               <ul class="d-flex flex-column ps-0 me-6">
-                <li><a class="d-block text-dark mb-6" href="#">關於我們</a></li>
+                <li><a class="d-block text-dark mb-6" href="./about-us.html">關於我們</a></li>
                 <li><a class="d-block text-dark mb-6" href="#">會員登入</a></li>
               </ul>
               <ul class="d-flex flex-column ps-0">
-                <li><a class="d-block text-dark mb-6" href="#">找時光</a></li>
-                <li><a class="d-block text-dark mb-6" href="#">找光景</a></li>
+                <li><a class="d-block text-dark mb-6" href="./index.html">找時光</a></li>
+                <li><a class="d-block text-dark mb-6" href="./search-time.html">找光景</a></li>
                 <li><a class="d-block text-dark mb-6" href="#">存時光</a></li>
               </ul>
             </div>
@@ -349,10 +357,12 @@
     </div>
     <div class="border border-secondary border-start-0 border-end-0">
       <p class="text-center text-dark mb-0 py-4">© 2022 By Van.CS</p>
+      <p class="text-center text-dark">此網站僅做為前端side project 作品練習，無營利用途</p>
     </div>
     </footer>
 
     <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/jquery.rwdImageMaps.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
 </html>
