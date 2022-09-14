@@ -12,11 +12,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
     <link rel="stylesheet" href="./assets/style/all.css" />
-    <style>
+    <!-- <style>
       * {
         outline: 0.5px solid lightgray;
       }
-    </style>
+    </style> -->
   </head>
 
   <body>
@@ -63,7 +63,7 @@
                 <a class="nav-link text-secondary me-8" href="./search-time.html">找時光</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-secondary" href="#">存時光</a>
+                <a class="nav-link text-secondary" href="./how-to-save-time.html">存時光</a>
               </li>
             </ul>
             <div class="nav-item">
@@ -75,7 +75,7 @@
     </div>
 
     
-<section class="my-4">
+<!-- <section class="my-4">
   <div class="container">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
@@ -86,12 +86,11 @@
       </ol>
     </nav>
   </div>
-</section>
+</section> -->
 
-<section class="pt-10 pb-20">
+<!-- <section class="pt-10 pb-20">
   <div class="container">
     <div class="row justify-content-center align-items-center">
-      <!-- 選擇時間 -->
       <div class="col-8 d-flex justify-content-center align-items-center mb-10 border border-secondary p-4 rounded-3 bg-white">
           <div>
             <label for="date-start" class="form-label fs-24 text-secondary fw-bold mb-0 me-4"
@@ -121,7 +120,6 @@
           </div>
         </div>
       </div>
-      <!-- 選擇標籤 -->
         <div class="row justify-content-center">
           <div class="col-8 row row-cols-6 align-items-center border border-secondary p-4 rounded-3 bg-white">
           <div class="form-check col">
@@ -176,10 +174,102 @@
     </div>
       </div>
   </div>
-</section>
+</section> -->
 
 <section class="search-bg pt-10 pb-20 ">
   <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a class="text-secondary" href="./index.html">首頁</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">找時光</li>
+      </ol>
+    </nav>
+        <!-- 選擇時間 -->
+        <div class="row justify-content-center align-items-center">
+          <div class="col-8 d-flex justify-content-center align-items-center mb-10 border border-secondary p-4 rounded-3">
+              <div>
+                <label for="date-start" class="form-label fs-24 text-secondary fw-bold mb-0 me-4"
+                >起始日期</label
+                >
+              </div>
+              <div class="me-10">
+                <input
+                type="date"
+                class="form-control text-secondary bg-primary"
+                id="date-start"
+                placeholder="YYYY/MM/DD"
+                />
+              </div>
+              <div>
+                <label for="date-end" class="form-label fs-24 text-secondary fw-bold mb-0 me-4"
+                >迄止日期</label
+                >
+              </div>
+              <div>
+                <input
+                type="date"
+                class="form-control text-secondary bg-primary"
+                id="date-end"
+                placeholder="YYYY/MM/DD"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- 選擇標籤 -->
+            <div class="row justify-content-center">
+              <div class="col-8 row row-cols-6 align-items-center border border-secondary p-4 rounded-3">
+              <div class="form-check col">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
+                  人物團體
+                </label>
+              </div>
+              <div class="form-check col">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
+                  藝術人文
+                </label>
+              </div>
+              <div class="form-check col">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
+                  社會政治
+                </label>
+              </div>
+              <div class="form-check col">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
+                  民俗宗教
+                </label>
+              </div>
+              <div class="form-check col">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
+                  產業經濟
+                </label>
+              </div>
+              <div class="form-check col">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
+                  族群語言
+                </label>
+              </div>
+              <div class="form-check col">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
+                  空間建築
+                </label>
+              </div>
+              <div class="form-check col">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
+                  生態環境
+                </label>
+              </div>
+          </div>
+        </div>
     <!-- 選擇縣市 -->
     <div class="row justify-content-center align-items-center">
       <div class="col-10">
@@ -405,7 +495,7 @@
   </div>
 </section>
 
-<section class="my-5 my-md-20 py-30 bg-white">
+<section class="py-30">
   <div class="container">
     <div class="row justify-content-center align-items-center">
       <div class="col-11 d-flex justify-content-between align-items-center mb-5">
@@ -515,7 +605,7 @@
               <ul class="d-flex flex-column ps-0">
                 <li><a class="d-block text-dark mb-6" href="./index.html">找時光</a></li>
                 <li><a class="d-block text-dark mb-6" href="./search-time.html">找光景</a></li>
-                <li><a class="d-block text-dark mb-6" href="#">存時光</a></li>
+                <li><a class="d-block text-dark mb-6" href="./how-to-save-time.html">存時光</a></li>
               </ul>
             </div>
             <ul class="d-flex justify-content-between ps-0">
