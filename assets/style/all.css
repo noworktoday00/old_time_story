@@ -14345,4 +14345,8 @@ area {
   right: 44%;
 }
 
+.new-taipei:hover + .icon-newtaipei {
+  max-width: 30px;
+}
+
 /*# sourceMappingURL=all.css.map */
