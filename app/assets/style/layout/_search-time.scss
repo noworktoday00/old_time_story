@@ -1,6 +1,133 @@
-.search-bg {
+.parchment-bg {
   background-image: url(../images/search_page/area-search-8.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.city-icon {
+  position: relative;
+  .icon-taipei{
+    position: absolute;
+    max-width: 24px;
+    bottom:74%;
+    left: 14%;
+  }
+  .icon-newtaipei{
+    position: absolute;
+    max-width: 24px;
+    bottom:65%;
+    right: 88%;
+  }
+  .icon-keelung{
+    position: absolute;
+    max-width: 24px;
+    bottom: 78%;
+    right: 90%;
+  }
+  .icon-taoyuan{
+    position: absolute;
+    max-width: 24px;
+    bottom: 58%;
+    left: 18%;
+  }
+  .icon-hsinchu{
+    position: absolute;
+    max-width: 24px;
+    bottom: 60%;
+    left: 25%;
+  }
+  .icon-miaoli{
+    position: absolute;
+    max-width: 24px;
+    bottom: 50%;
+    left: 31%;
+  }
+  .icon-taichung{
+    position: absolute;
+    max-width: 24px;
+    bottom: 48%;
+    left: 40%;
+  }
+  .icon-changhua{
+    position: absolute;
+    max-width: 24px;
+    bottom: 40%;
+    left: 47%;
+  }
+  .icon-yunlin{
+    position: absolute;
+    max-width: 24px;
+    bottom: 43%;
+    right: 44%;
+  }
+  .icon-chiayi{
+    position: absolute;
+    max-width: 24px;
+    bottom: 47%;
+    right: 38%;
+  }
+  .icon-tainan{
+    position: absolute;
+    max-width: 24px;
+    bottom: 40%;
+    right: 30%;
+  }
+  .icon-kaohsiung{
+    position: absolute;
+    max-width: 24px;
+    bottom: 50%;
+    right: 27%;
+  }
+  .icon-pingtong{
+    position: absolute;
+    max-width: 24px;
+    bottom: 52%;
+    right: 16%;
+  }
+  .icon-taitung{
+    position: absolute;
+    max-width: 24px;
+    bottom: 66%;
+    right: 26%;
+  }
+  .icon-hualien{
+    position: absolute;
+    max-width: 24px;
+    bottom: 75%;
+    left: 42%;
+  }
+  .icon-yilan{
+    position: absolute;
+    max-width: 24px;
+    bottom: 76%;
+    left: 26%;
+  }
+  .icon-nantou{
+    position: absolute;
+    max-width: 24px;
+    bottom: 60%;
+    left: 47%;
+  }
+  .icon-kinmen{
+    position: absolute;
+    max-width: 24px;
+    bottom: 40%;
+    left: 6%;
+  }
+  .icon-matsu{
+    position: absolute;
+    max-width: 24px;
+    bottom: 28%;
+    left: 25%;
+  }
+  .icon-penghu{
+    position: absolute;
+    max-width: 24px;
+    bottom: 16%;
+    right: 44%;
+  }
+}
+
+.new-taipei:hover+.icon-newtaipei{
+  max-width: 30px;
 }
