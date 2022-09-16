@@ -14202,6 +14202,12 @@ area {
   background-color: #000;
 }
 
+.rotated {
+  -webkit-transform: rotate(3deg);
+      -ms-transform: rotate(3deg);
+          transform: rotate(3deg);
+}
+
 .parchment-bg {
   background-image: url(../images/search_page/area-search-8.png);
   background-position: center;
