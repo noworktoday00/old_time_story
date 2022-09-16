@@ -176,7 +176,7 @@
   </div>
 </section> -->
 
-<section class="parchment-bg pt-10 pb-20 ">
+<section class="parchment-bg pt-10 pb-20">
   <div class="container">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
@@ -186,93 +186,98 @@
         <li class="breadcrumb-item active" aria-current="page">找時光</li>
       </ol>
     </nav>
-        <!-- 選擇時間 -->
-        <div class="row justify-content-center align-items-center">
-          <div class="col-8 d-flex justify-content-center align-items-center mb-10 border border-secondary p-4 rounded-3">
-              <div>
-                <label for="date-start" class="form-label fs-24 text-secondary fw-bold mb-0 me-4"
-                >起始日期</label
-                >
-              </div>
-              <div class="me-10">
-                <input
-                type="date"
-                class="form-control text-secondary bg-primary"
-                id="date-start"
-                placeholder="YYYY/MM/DD"
-                />
-              </div>
-              <div>
-                <label for="date-end" class="form-label fs-24 text-secondary fw-bold mb-0 me-4"
-                >迄止日期</label
-                >
-              </div>
-              <div>
-                <input
-                type="date"
-                class="form-control text-secondary bg-primary"
-                id="date-end"
-                placeholder="YYYY/MM/DD"
-                />
-              </div>
+    <div class="row">
+    <!-- 選擇時間 -->
+    <div class="row justify-content-center align-items-center mb-10">
+      <h2 class="fs-32 text-secondary text-center">請選擇時間區段</h2>
+      <div class="col-10 col-md-8 border border-secondary p-5 rounded-3">
+        <form class="row g-6">
+          <div class="col-md-6">
+            <label
+              for="date-start"
+              class="form-label text-secondary fw-bold ms-md-5"
+              >開始時間</label
+            >
+            <input
+              type="date"
+              class="form-control bg-primary"
+              id="date-start"
+            />
+          </div>
+          <div class="col-md-6">
+            <label
+              for="date-end"
+              class="form-label text-secondary fw-bold ms-md-5"
+              >結束時間</label
+            >
+            <input type="date" class="form-control bg-primary" id="date-end" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- 選擇類別 -->
+    <div class="row justify-content-center align-items-center mb-10">
+      <h2 class="fs-32 text-secondary text-center">請選擇類別</h2>
+      <div class="col-10 col-md-8 border border-secondary p-5 rounded-3">
+        <form class="row g-6 justify-content-center align-items-center mt-0">
+          <div class="col-10 row">
+            <div class="col-md-4 form-check">
+              <input class="form-check-input" type="checkbox" id="people-and-group">
+              <label class="form-check-label" for="people-and-group">
+                人物團體
+              </label>
+            </div>
+            <div class="col-md-4 form-check ">
+              <input class="form-check-input" type="checkbox" id="art">
+              <label class="form-check-label" for="art">
+                藝術人文
+              </label>
+            </div>
+            <div class="col-md-4 form-check ">
+              <input class="form-check-input" type="checkbox" id="social">
+              <label class="form-check-label" for="social">
+                社會政治
+              </label>
+            </div>
+            <div class="col-md-4 form-check ">
+              <input class="form-check-input" type="checkbox" id="culture">
+              <label class="form-check-label" for="culture">
+                民俗宗教
+              </label>
+            </div>
+            <div class="col-md-4 form-check ">
+              <input class="form-check-input" type="checkbox" id="economy">
+              <label class="form-check-label" for="economy">
+                產業經濟
+              </label>
+            </div>
+            <div class="col-md-4 form-check ">
+              <input class="form-check-input" type="checkbox" id="">
+              <label class="form-check-label" for="architecture">
+                空間建築
+              </label>
+            </div>
+            <div class="col-md-4 form-check ">
+              <input class="form-check-input" type="checkbox" id="race">
+              <label class="form-check-label" for="race">
+                族群語言
+              </label>
+            </div>
+            <div class="col-md-4 form-check ">
+              <input class="form-check-input" type="checkbox" id="nature">
+              <label class="form-check-label" for="nature">
+                自然生態
+              </label>
             </div>
           </div>
-          <!-- 選擇標籤 -->
-            <div class="row justify-content-center">
-              <div class="col-8 row row-cols-6 align-items-center border border-secondary p-4 rounded-3">
-              <div class="form-check col">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
-                  人物團體
-                </label>
-              </div>
-              <div class="form-check col">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
-                  藝術人文
-                </label>
-              </div>
-              <div class="form-check col">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
-                  社會政治
-                </label>
-              </div>
-              <div class="form-check col">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
-                  民俗宗教
-                </label>
-              </div>
-              <div class="form-check col">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
-                  產業經濟
-                </label>
-              </div>
-              <div class="form-check col">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
-                  族群語言
-                </label>
-              </div>
-              <div class="form-check col">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
-                  空間建築
-                </label>
-              </div>
-              <div class="form-check col">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
-                  生態環境
-                </label>
-              </div>
-          </div>
-        </div>
-    <!-- 選擇縣市 -->
+        </form>
+      </div>
+    </div>
+  </div>
+    <!-- 選擇縣市 大 -->
     <div class="row justify-content-center align-items-center">
-      <div class="col-10">
+      <h2 class="fs-32 text-secondary text-center">選擇地區</h2>
+      <div class="col-10 d-none d-md-block">
         <div class="city-icon">
           <img
             class="img-fluid"
@@ -282,30 +287,108 @@
             alt=""
           />
           <!-- 區域名稱 start-->
-          <img
-            class="icon-taipei"
-            src="./assets/images/search_page/city-icon/taipei.svg"
-            alt=""
-          />
-          <img class="icon-newtaipei" src="./assets/images/search_page/city-icon/new_taipei.svg" alt="">
-          <img class="icon-keelung" src="./assets/images/search_page/city-icon/keelung.svg" alt="" >
-          <img src="./assets/images/search_page/city-icon/taoyuan.svg" alt="" class="icon-taoyuan">
-          <img src="./assets/images/search_page/city-icon/hsinchu.svg" alt="" class="icon-hsinchu">
-          <img src="./assets/images/search_page/city-icon/miaolee.svg" alt="" class="icon-miaoli">
-          <img src="./assets/images/search_page/city-icon/taichung.svg" alt="" class="icon-taichung">
-          <img src="./assets/images/search_page/city-icon/chunhua.svg" alt="" class="icon-changhua">
-          <img src="./assets/images/search_page/city-icon/yuinlin.svg" alt="" class="icon-yunlin">
-          <img src="./assets/images/search_page/city-icon/chiayi.svg" alt="" class="icon-chiayi">
-          <img src="./assets/images/search_page/city-icon/tainan.svg" alt="" class="icon-tainan">
-          <img src="./assets/images/search_page/city-icon/kaoshiung.svg" alt="" class="icon-kaohsiung">
-          <img src="./assets/images/search_page/city-icon/pingtong.svg" alt="" class="icon-pingtong">
-          <img src="./assets/images/search_page/city-icon/taitong.svg" alt="" class="icon-taitung">
-          <img src="./assets/images/search_page/city-icon/hualien.svg" alt="" class="icon-hualien">
-          <img src="./assets/images/search_page/city-icon/yilan.svg" alt="" class="icon-yilan">
-          <img src="./assets/images/search_page/city-icon/nantou.svg" alt="" class="icon-nantou">
-          <img src="./assets/images/search_page/city-icon/kinmeng.svg" alt="" class="icon-kinmen">
-          <img src="./assets/images/search_page/city-icon/mazhu.svg" alt="" class="icon-matsu">
-          <img src="./assets/images/search_page/city-icon/ponghu.svg" alt="" class="icon-penghu">
+          <div class="col">
+            <img
+              class="icon-taipei"
+              src="./assets/images/search_page/city-icon/taipei.svg"
+              alt=""
+            />
+            <img
+              class="icon-newtaipei"
+              src="./assets/images/search_page/city-icon/new_taipei.svg"
+              alt=""
+            />
+            <img
+              class="icon-keelung"
+              src="./assets/images/search_page/city-icon/keelung.svg"
+              alt=""
+            />
+            <img
+              src="./assets/images/search_page/city-icon/taoyuan.svg"
+              alt=""
+              class="icon-taoyuan"
+            />
+            <img
+              src="./assets/images/search_page/city-icon/hsinchu.svg"
+              alt=""
+              class="icon-hsinchu"
+            />
+            <img
+              src="./assets/images/search_page/city-icon/miaolee.svg"
+              alt=""
+              class="icon-miaoli"
+            />
+            <img
+              src="./assets/images/search_page/city-icon/taichung.svg"
+              alt=""
+              class="icon-taichung"
+            />
+            <img
+              src="./assets/images/search_page/city-icon/chunhua.svg"
+              alt=""
+              class="icon-changhua"
+            />
+            <img
+              src="./assets/images/search_page/city-icon/yuinlin.svg"
+              alt=""
+              class="icon-yunlin"
+            />
+            <img
+              src="./assets/images/search_page/city-icon/chiayi.svg"
+              alt=""
+              class="icon-chiayi"
+            />
+            <img
+              src="./assets/images/search_page/city-icon/tainan.svg"
+              alt=""
+              class="icon-tainan"
+            />
+            <img
+              src="./assets/images/search_page/city-icon/kaoshiung.svg"
+              alt=""
+              class="icon-kaohsiung"
+            />
+            <img
+              src="./assets/images/search_page/city-icon/pingtong.svg"
+              alt=""
+              class="icon-pingtong"
+            />
+            <img
+              src="./assets/images/search_page/city-icon/taitong.svg"
+              alt=""
+              class="icon-taitung"
+            />
+            <img
+              src="./assets/images/search_page/city-icon/hualien.svg"
+              alt=""
+              class="icon-hualien"
+            />
+            <img
+              src="./assets/images/search_page/city-icon/yilan.svg"
+              alt=""
+              class="icon-yilan"
+            />
+            <img
+              src="./assets/images/search_page/city-icon/nantou.svg"
+              alt=""
+              class="icon-nantou"
+            />
+            <img
+              src="./assets/images/search_page/city-icon/kinmeng.svg"
+              alt=""
+              class="icon-kinmen"
+            />
+            <img
+              src="./assets/images/search_page/city-icon/mazhu.svg"
+              alt=""
+              class="icon-matsu"
+            />
+            <img
+              src="./assets/images/search_page/city-icon/ponghu.svg"
+              alt=""
+              class="icon-penghu"
+            />
+          </div>
           <!-- 區域名稱 end -->
           <map class="search-map" name="search-map" id="search-map">
             <area
@@ -492,13 +575,219 @@
         </div>
       </div>
     </div>
+    <!-- 選擇區域 小 -->
+    <div
+      class="row justify-content-center align-items-center d-block d-md-none"
+    >
+      <div class="col-12 d-block d-md-none">
+        <img
+          class="img-fluid"
+          id="Image-Maps-Com-image-maps-2022-09-16-021225"
+          src="https://app.image-maps.com/m/private/0/3a7vbmq1drtajt775d02gvj9il_taiwan-map-small-8.png"
+          usemap="#search-map-sm"
+          alt=""
+        />
+        <map name="search-map-sm" id="search-map-sm">
+          <area
+            alt=""
+            title=""
+            href="./search-result.html"
+            shape="rect"
+            coords="99,860,286,1002"
+            style="outline: none"
+            target="_self"
+          />
+          <area
+            shape="rect"
+            coords="1366,1902,1368,1904"
+            alt="Image Map"
+            style="outline: none"
+            title="Image Map"
+            href="https://www.image-maps.com/"
+          />
+          <area
+            alt=""
+            title=""
+            href="./search-result.html"
+            shape="poly"
+            coords="287,259,373,159,374,111,431,107,447,93,499,114,535,199,504,267,471,246,430,248,408,317,348,285,309,299,282,286,291,257"
+            style="outline: none"
+            target="_self"
+          />
+          <area
+            alt=""
+            title=""
+            href="./search-result.html"
+            shape="poly"
+            coords="168,679,108,629,114,601,282,455,338,475,353,506,309,537,310,561,331,561,331,688,256,689,255,628,231,624,207,660"
+            style="outline: none"
+            target="_self"
+          />
+          <area
+            alt=""
+            title=""
+            href="./search-result.html"
+            shape="poly"
+            coords="927,248,947,195,945,120,997,120,999,226,990,228,985,253,996,264,996,291,1017,310,972,357,959,322,958,264,939,263"
+            style="outline: none"
+            target="_self"
+          />
+          <area
+            alt=""
+            title=""
+            href="./search-result.html"
+            shape="poly"
+            coords="941,150,943,228,929,261,952,263,956,329,969,352,1014,312,990,245,1000,228,1000,187,1023,192,1007,215,1015,230,1066,253,1099,247,1091,215,1091,200,1134,186,1143,231,1185,241,1172,267,1142,258,1125,261,1071,306,1034,318,1021,358,1002,391,969,424,952,429,939,448,917,441,925,413,909,402,888,402,878,390,864,389,845,339,880,324,879,312,859,302,869,281,864,276,801,262,858,248,876,215,884,174"
+            style="outline: none"
+            target="_self"
+          />
+          <area
+            alt=""
+            title=""
+            href="./search-result.html"
+            shape="poly"
+            coords="1024,106,1027,189,1013,214,1068,250,1095,243,1083,221,1090,192,1080,189,1080,106"
+            style="outline: none"
+            target="_self"
+          />
+          <area
+            alt=""
+            title=""
+            href="./search-result.html"
+            shape="poly"
+            coords="678,377,690,336,718,319,721,234,772,234,776,281,785,266,809,275,855,284,850,306,872,318,839,336,852,389,869,398,910,409,912,441,939,451,933,471,913,486,911,510,896,510,882,495,851,489,855,438,837,434,839,399,780,399,777,424,768,414,766,390,729,404,712,383"
+            style="outline: none"
+            target="_self"
+          />
+          <area
+            alt=""
+            title=""
+            href="./search-result.html"
+            shape="poly"
+            coords="630,488,624,457,633,434,651,423,672,388,700,389,721,408,759,401,762,420,780,432,781,405,831,405,831,436,850,435,843,453,849,472,848,494,873,497,893,515,907,514,903,546,892,564,872,572,877,591,840,600,840,575,816,567,795,573,788,566,752,585,740,521,711,527,680,509,678,483"
+            style="outline: none"
+            target="_self"
+          />
+          <area
+            alt=""
+            title=""
+            href="./search-result.html"
+            shape="poly"
+            coords="519,654,541,639,558,555,588,546,601,534,602,519,617,519,630,494,669,494,666,514,702,532,727,533,737,591,756,597,785,580,829,582,834,603,828,627,801,635,787,658,768,660,750,678,726,680,727,645,669,645,669,699,636,704,589,699,572,696,561,687,546,684"
+            style="outline: none"
+            target="_self"
+          />
+          <area
+            alt=""
+            title=""
+            href="./search-result.html"
+            shape="poly"
+            coords="467,776,486,756,492,693,511,668,549,695,604,715,673,715,674,650,723,650,723,688,753,687,771,669,796,666,809,642,835,636,842,603,877,595,892,611,931,621,912,681,892,700,863,702,846,711,812,705,780,717,765,751,741,756,696,789,684,789,625,823,618,852,560,850,552,816,520,814,490,798"
+            style="outline: none"
+            target="_self"
+          />
+          <area
+            alt=""
+            title=""
+            href="./search-result.html"
+            shape="poly"
+            coords="461,788,486,804,543,825,551,853,566,858,549,888,558,941,571,959,546,975,546,918,488,918,488,966,473,972,446,960,402,974,375,963,405,939,405,903,426,849,427,797,454,798"
+            style="outline: none"
+            target="_self"
+          />
+          <area
+            alt=""
+            title=""
+            href="./search-result.html"
+            shape="poly"
+            coords="353,1125,359,1076,354,1023,377,978,405,992,444,978,469,985,489,982,492,923,539,924,537,973,546,987,575,966,573,993,589,1011,585,1030,600,1042,634,1049,628,1062,606,1057,591,1065,578,1056,551,1062,495,1049,459,1066,462,1037,399,1035,396,1116"
+            style="outline: none"
+            target="_self"
+          />
+          <area
+            alt=""
+            title=""
+            href="./search-result.html"
+            shape="poly"
+            coords="357,1230,354,1199,369,1161,359,1140,408,1124,411,1047,451,1047,452,1084,495,1067,522,1077,568,1075,597,1075,632,1074,641,1053,672,1052,687,1071,693,1095,738,1093,699,1119,681,1151,651,1169,633,1198,627,1197,618,1176,597,1175,555,1177,522,1151,492,1153,435,1176,420,1205,396,1211,380,1224"
+            style="outline: none"
+            target="_self"
+          />
+          <area
+            alt=""
+            title=""
+            href="./search-result.html"
+            shape="poly"
+            coords="625,1206,614,1202,608,1190,549,1194,515,1165,447,1189,436,1215,405,1231,368,1245,348,1266,342,1309,349,1328,341,1347,355,1371,378,1374,399,1386,400,1414,451,1386,495,1392,516,1385,519,1365,549,1323,570,1316,569,1260,595,1259,618,1233"
+            style="outline: none"
+            target="_self"
+          />
+          <area
+            alt=""
+            title=""
+            href="./search-result.html"
+            shape="poly"
+            coords="552,1607,541,1594,510,1585,499,1563,483,1560,459,1502,470,1478,437,1453,427,1431,411,1430,442,1404,511,1408,534,1395,534,1366,571,1332,580,1274,609,1272,618,1259,635,1233,635,1211,656,1198,665,1179,701,1149,723,1119,749,1101,784,1101,786,1122,809,1149,801,1159,759,1195,751,1248,737,1290,733,1338,738,1362,750,1383,732,1391,697,1399,671,1413,654,1413,628,1421,578,1419,546,1440,558,1479,543,1520,555,1561,548,1582"
+            style="outline: none"
+            target="_self"
+          />
+          <area
+            alt=""
+            title=""
+            href="./search-result.html"
+            shape="poly"
+            coords="748,1397,752,1416,768,1424,733,1447,729,1472,717,1482,714,1538,717,1556,717,1578,732,1584,729,1613,771,1672,809,1680,801,1695,798,1722,806,1749,819,1759,821,1774,812,1788,800,1812,788,1816,778,1809,771,1809,762,1821,746,1821,745,1808,738,1800,741,1788,731,1766,732,1745,714,1722,714,1697,702,1680,667,1668,657,1641,636,1635,624,1622,605,1617,593,1610,572,1608,559,1593,573,1556,561,1526,570,1478,563,1452,577,1432,624,1435,649,1428,655,1426,690,1422,703,1410"
+            style="outline: none"
+            target="_self"
+          />
+          <area
+            alt=""
+            title=""
+            href="./search-result.html"
+            shape="poly"
+            coords="1041,1063,1022,1068,998,1106,1002,1129,990,1148,986,1182,965,1197,975,1205,968,1224,948,1228,903,1226,888,1206,852,1203,822,1188,822,1166,807,1174,794,1194,782,1200,767,1251,756,1287,747,1325,749,1352,759,1365,759,1400,779,1410,780,1439,749,1463,746,1479,735,1491,729,1538,735,1557,736,1572,750,1581,741,1611,777,1660,810,1671,817,1638,813,1587,840,1552,840,1484,860,1443,913,1421,924,1406,929,1368,953,1350,957,1319,975,1265,1013,1230,1018,1149,1044,1061,1040,1069"
+            style="outline: none"
+            target="_self"
+          />
+          <area
+            alt=""
+            title=""
+            href="./search-result.html"
+            shape="poly"
+            coords="1036,1050,1016,1059,987,1107,996,1127,980,1140,978,1173,962,1185,954,1198,963,1212,957,1219,912,1218,893,1196,872,1195,839,1186,833,1169,821,1145,801,1118,805,1086,819,1074,820,1065,855,1038,891,1019,896,947,874,924,894,897,894,834,884,822,887,809,900,785,882,762,888,711,923,687,925,663,935,648,938,629,957,624,972,633,1043,618,1056,603,1071,600,1108,614,1110,632,1076,654,1051,720,1053,741,1071,781,1042,823,1057,864,1052,897,1037,921,1044,991,1029,1015"
+            style="outline: none"
+            target="_self"
+          />
+          <area
+            alt=""
+            title=""
+            href="./search-result.html"
+            shape="poly"
+            coords="1163,267,1142,264,1083,319,1047,331,1026,393,977,441,953,444,939,480,923,493,912,549,903,569,885,578,888,594,930,617,958,615,970,619,1037,609,1047,594,1072,588,1110,604,1119,584,1111,551,1120,513,1142,492,1143,455,1127,450,1121,417,1101,390,1095,345,1125,294"
+            style="outline: none"
+            target="_self"
+          />
+          <area
+            alt=""
+            title=""
+            href="./search-result.html"
+            shape="poly"
+            coords="880,707,843,724,804,726,783,738,777,766,738,774,705,809,684,806,663,827,647,828,630,864,581,858,562,892,573,915,569,939,579,951,585,975,583,991,601,1008,596,1026,617,1035,684,1038,696,1061,705,1089,742,1081,756,1095,789,1092,807,1076,807,1059,839,1031,843,1023,872,1013,877,984,886,959,875,947,855,920,871,905,883,887,887,861,882,839,870,818,876,801,885,786,868,761"
+            style="outline: none"
+            target="_self"
+          />
+        </map>
+      </div>
+    </div>
   </div>
 </section>
 
 <section class="py-30">
   <div class="container">
     <div class="row justify-content-center align-items-center">
-      <div class="col-11 d-flex justify-content-between align-items-center mb-5">
+      <div
+        class="col-11 d-flex justify-content-between align-items-center mb-5"
+      >
         <h2 class="fs-16 text-secondary fw-bold mb-0">瀏覽時光</h2>
         <a class="d-block text-secondary fs-16" href="#">查看更多...</a>
       </div>

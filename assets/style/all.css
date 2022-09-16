@@ -9432,6 +9432,10 @@ fieldset:disabled .btn {
   font-size: 1rem !important;
 }
 
+.fs-18 {
+  font-size: 1.125rem !important;
+}
+
 .fs-24 {
   font-size: calc(1.275rem + 0.3vw) !important;
 }
