@@ -1,4 +1,4 @@
-.bg-opacity{
+.bg-opacity {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -16,11 +16,15 @@
 
 .story-card {
   max-width: 240px;
-  max-height: 240px ;
+  max-height: 240px;
   object-fit: cover;
 }
-.save-time{
+.save-time {
   width: 150px;
   height: 150px;
   background-color: #000;
+}
+
+.rotated{
+  transform: rotate(3deg)
 }
