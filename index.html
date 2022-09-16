@@ -106,8 +106,6 @@
 <section class="banner d-flex justify-content-center align-items-center">
   <p
     class="text-center text-secondary fs-48 mb-0 banner-text-bg px-20 py-10"
-    data-aos="fade-up"
-    data-aos-delay="600"
   >
     尋找‧儲存 <br />
     你經歷的時光中 <br />
@@ -568,9 +566,13 @@
     </a>
   </div>
 </section>
-
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
+<script>
+  var swiper = new Swiper(".mySwiper", {
+  effect: "cards",
+  grabCursor: true,
+});
+</script>
 
     <footer class="footer parchment-bg">
       <div class="border border-secondary border-start-0 border-end-0 mb-1">
@@ -654,6 +656,7 @@
     <script src="./assets/js/all.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
       AOS.init({
         offset: 400, // offset (in px) from the original trigger point
