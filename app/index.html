@@ -8,8 +8,6 @@ current: index
 <section class="banner d-flex justify-content-center align-items-center">
   <p
     class="text-center text-secondary fs-48 mb-0 banner-text-bg px-20 py-10"
-    data-aos="fade-up"
-    data-aos-delay="600"
   >
     尋找‧儲存 <br />
     你經歷的時光中 <br />
@@ -470,5 +468,10 @@ current: index
     </a>
   </div>
 </section>
-
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+  effect: "cards",
+  grabCursor: true,
+});
+</script>

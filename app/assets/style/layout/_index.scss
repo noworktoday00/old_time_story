@@ -1,3 +1,11 @@
+.nav-item a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  &:hover {
+    border-bottom: 1px solid $danger;
+    font-weight: bold;
+  }
+}
+
 .bg-opacity {
   background-color: rgba(255, 255, 255, 0.6);
 }
@@ -15,9 +23,13 @@
 }
 
 .story-card {
-  max-width: 240px;
+  max-width: 220px;
   max-height: 240px;
   object-fit: cover;
+  opacity: 0.6;
+  &:hover {
+    opacity: 1;
+  }
 }
 .save-time {
   width: 150px;
@@ -25,6 +37,14 @@
   background-color: #000;
 }
 
-.rotated{
-  transform: rotate(3deg)
+.rotated {
+  transform: rotate(3deg);
+}
+
+.footer-item a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  &:hover {
+    border-bottom: 1px solid $danger;
+    font-weight: bold;
+  }
 }
