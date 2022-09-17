@@ -5,107 +5,6 @@ engine: ejs
 current: Search Time
 ---
 
-<!-- <section class="my-4">
-  <div class="container">
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a class="text-secondary" href="./index.html">首頁</a>
-        </li>
-        <li class="breadcrumb-item active" aria-current="page">找時光</li>
-      </ol>
-    </nav>
-  </div>
-</section> -->
-
-<!-- <section class="pt-10 pb-20">
-  <div class="container">
-    <div class="row justify-content-center align-items-center">
-      <div class="col-8 d-flex justify-content-center align-items-center mb-10 border border-secondary p-4 rounded-3 bg-white">
-          <div>
-            <label for="date-start" class="form-label fs-24 text-secondary fw-bold mb-0 me-4"
-            >起始日期</label
-            >
-          </div>
-          <div class="me-10">
-            <input
-            type="email"
-            class="form-control text-secondary"
-            id="date-start"
-            placeholder="YYYY/MM/DD"
-            />
-          </div>
-          <div>
-            <label for="date-end" class="form-label fs-24 text-secondary fw-bold mb-0 me-4"
-            >迄止日期</label
-            >
-          </div>
-          <div>
-            <input
-            type="email"
-            class="form-control text-secondary"
-            id="date-end"
-            placeholder="YYYY/MM/DD"
-            />
-          </div>
-        </div>
-      </div>
-        <div class="row justify-content-center">
-          <div class="col-8 row row-cols-6 align-items-center border border-secondary p-4 rounded-3 bg-white">
-          <div class="form-check col">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
-              人物團體
-            </label>
-          </div>
-          <div class="form-check col">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
-              藝術人文
-            </label>
-          </div>
-          <div class="form-check col">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
-              社會政治
-            </label>
-          </div>
-          <div class="form-check col">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
-              民俗宗教
-            </label>
-          </div>
-          <div class="form-check col">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
-              產業經濟
-            </label>
-          </div>
-          <div class="form-check col">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
-              族群語言
-            </label>
-          </div>
-          <div class="form-check col">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
-              空間建築
-            </label>
-          </div>
-          <div class="form-check col">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label text-secondary fw-bold" for="flexCheckDefault">
-              生態環境
-            </label>
-          </div>
-      </div>
-    </div>
-      </div>
-  </div>
-</section> -->
-
 <section class="parchment-bg pt-10 pb-20">
   <div class="container">
     <nav aria-label="breadcrumb">
@@ -148,7 +47,7 @@ current: Search Time
     <!-- 選擇類別 -->
     <div class="row justify-content-center align-items-center mb-10">
       <h2 class="fs-32 text-secondary text-center">請選擇類別</h2>
-      <div class="col-10 col-md-8 border border-secondary p-5 rounded-3">
+      <div class="d-none d-md-block col-10 col-md-8 border border-secondary p-5 rounded-3">
         <form class="row g-6 justify-content-center align-items-center mt-0">
           <div class="col-10 row">
             <div class="col-md-4 form-check">
@@ -202,6 +101,20 @@ current: Search Time
           </div>
         </form>
       </div>
+      <div class="d-block d-md-none col-10 col-md-8 border border-secondary p-5 rounded-3">
+      <select class="form-select bg-primary" aria-label="Default select example">
+        <option selected>請選擇類別</option>
+        <option value="people-and-group">人物團體</option>
+        <option value="art">人文藝術</option>
+        <option value="social">社會政治</option>
+        <option value="culture">民俗宗教</option>
+        <option value="economy">產業經濟</option>
+        <option value="architecture">空間建築</option>
+        <option value="race">族群語言</option>
+        <option value="nature">自然生態</option>
+      </select>
+    </div>
+
     </div>
   </div>
     <!-- 選擇縣市 大 -->
@@ -712,82 +625,24 @@ current: Search Time
   </div>
 </section>
 
-<section class="py-30">
+<section class="mb-5 mb-md-20 py-10 py-md-30" data-aos="zoom-in">
   <div class="container">
-    <div class="row justify-content-center align-items-center">
-      <div
-        class="col-11 d-flex justify-content-between align-items-center mb-5"
+    <div
+        class="d-flex justify-content-between align-items-center mb-5"
       >
         <h2 class="fs-16 text-secondary fw-bold mb-0">瀏覽時光</h2>
         <a class="d-block text-secondary fs-16" href="#">查看更多...</a>
       </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-11 row justify-content-center justify-content-md-between">
-        <div class="col-9 col-md-6 col-lg-3 mb-10 mb-lg-0">
-          <div class="card py-4 px-2 rounded-0 shadow">
-            <img
-              src="./assets/images/e6f0f5d0-46c8-4ea5-ba9f-aa8ce87696e3.jpg"
-              class="story-card rounded-0 mb-3 mx-auto img-fluid"
-              alt="..."
-            />
-            <div class="card-body px-4">
-              <div class="d-flex mb-2">
-                <span class="material-icons-outlined"> location_on </span>
-                <p class="fw-bold mb-0">台中市</p>
-              </div>
-              <div class="d-flex justify-content-between">
-                <p class="mb-0">1993.02.14</p>
-                <a class="d-block" href="./detail.html">more...</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-9 col-md-6 col-lg-3 mb-10 mb-lg-0">
-          <div class="card py-4 rounded-0 shadow">
-            <img
-              src="./assets/images/e6f0f5d0-46c8-4ea5-ba9f-aa8ce87696e3.jpg"
-              class="story-card rounded-0 mb-3 mx-auto"
-              alt="..."
-            />
-            <div class="card-body px-4">
-              <div class="d-flex mb-2">
-                <span class="material-icons-outlined"> location_on </span>
-                <p class="fw-bold mb-0">台中市</p>
-              </div>
-              <div class="d-flex justify-content-between">
-                <p class="mb-0">1993.02.14</p>
-                <a class="d-block" href="./detail.html">more...</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-9 col-md-6 col-lg-3 mb-10 mb-lg-0">
-          <div class="card py-4 rounded-0 shadow">
-            <img
-              src="./assets/images/e6f0f5d0-46c8-4ea5-ba9f-aa8ce87696e3.jpg"
-              class="story-card rounded-0 mb-3 mx-auto"
-              alt="..."
-            />
-            <div class="card-body px-4">
-              <div class="d-flex mb-2">
-                <span class="material-icons-outlined"> location_on </span>
-                <p class="fw-bold mb-0">台中市</p>
-              </div>
-              <div class="d-flex justify-content-between">
-                <p class="mb-0">1993.02.14</p>
-                <a class="d-block" href="./detail.html">more...</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-9 col-md-6 col-lg-3 mb-10 mb-lg-0">
+    <div class="row justify-content-center justify-content-md-between" data-aos="fade-up">
+      <div class="col-9 col-md-6 col-lg-3 mb-10 mb-lg-0">
         <div class="card py-4 rounded-0 shadow">
+          <div class="px-4">
           <img
             src="./assets/images/e6f0f5d0-46c8-4ea5-ba9f-aa8ce87696e3.jpg"
-            class="story-card rounded-0 mb-3 mx-auto"
+            class="story-card img-fluid rounded-0 mb-3 mx-auto"
             alt="..."
           />
+        </div>
           <div class="card-body px-4">
             <div class="d-flex mb-2">
               <span class="material-icons-outlined"> location_on </span>
@@ -800,7 +655,70 @@ current: Search Time
           </div>
         </div>
       </div>
+      <div class="col-9 col-md-6 col-lg-3 mb-10 mb-lg-0">
+        <div class="card py-4 rounded-0 shadow">
+          <div class="px-4">
+          <img
+            src="./assets/images/e6f0f5d0-46c8-4ea5-ba9f-aa8ce87696e3.jpg"
+            class="story-card img-fluid rounded-0 mb-3 mx-auto"
+            alt="..."
+          />
+        </div>
+          <div class="card-body px-4">
+            <div class="d-flex mb-2">
+              <span class="material-icons-outlined"> location_on </span>
+              <p class="fw-bold mb-0">台中市</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="mb-0">1993.02.14</p>
+              <a class="d-block" href="./detail.html">more...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-9 col-md-6 col-lg-3 mb-10 mb-lg-0">
+        <div class="card py-4 rounded-0 shadow">
+          <div class="px-4">
+          <img
+            src="./assets/images/e6f0f5d0-46c8-4ea5-ba9f-aa8ce87696e3.jpg"
+            class="story-card img-fluid rounded-0 mb-3 mx-auto"
+            alt="..."
+          />
+        </div>
+          <div class="card-body px-4">
+            <div class="d-flex mb-2">
+              <span class="material-icons-outlined"> location_on </span>
+              <p class="fw-bold mb-0">台中市</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="mb-0">1993.02.14</p>
+              <a class="d-block" href="./detail.html">more...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-9 col-md-6 col-lg-3 mb-10 mb-lg-0">
+        <div class="card py-4 rounded-0 shadow">
+          <div class="px-4">
+          <img
+            src="./assets/images/e6f0f5d0-46c8-4ea5-ba9f-aa8ce87696e3.jpg"
+            class="story-card img-fluid rounded-0 mb-3 mx-auto"
+            alt="..."
+          />
+        </div>
+          <div class="card-body px-4">
+            <div class="d-flex mb-2">
+              <span class="material-icons-outlined"> location_on </span>
+              <p class="fw-bold mb-0">台中市</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="mb-0">1993.02.14</p>
+              <a class="d-block" href="./detail.html">more...</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
