@@ -14200,10 +14200,6 @@ area {
 }
 
 .story-card {
-  max-width: 260px;
-  max-height: 240px;
-  -o-object-fit: cover;
-     object-fit: cover;
   opacity: 0.6;
 }
 
