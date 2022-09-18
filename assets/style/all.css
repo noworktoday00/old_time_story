@@ -14200,11 +14200,11 @@ area {
 }
 
 .story-card {
-  opacity: 0.6;
+  opacity: 1;
 }
 
 .story-card:hover {
-  opacity: 1;
+  opacity: 0.6;
 }
 
 .save-time {
